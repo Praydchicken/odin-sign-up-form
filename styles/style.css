@@ -1,0 +1,65 @@
+:root {
+	--font-heading: 'Space Mono';
+	--font-body: 'Plus Jakarta Sans';
+
+	--clr-accent: #2dba4e;
+	--clr-primary: #24292e;
+	--clr-secondary:  #2b3137;
+	--clr-font:#fafbfc;
+}
+
+body {
+	background-color: var(--clr-primary);
+	color: var(--clr-font);
+}
+
+h1, h2, h3, figcaption {
+	font-family: var(--font-heading);
+}
+
+p, label {
+	font-family: var(--font-body);
+}
+
+a {
+	font-weight: 700;
+	color: var(--clr-font);
+}
+
+a:hover {
+	color: var(--clr-accent);
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	min-height: 100vh;
+}
+
+.hero {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background:url('../assets/hero-image.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.hero__logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	margin-block: auto;
+ 	background-color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5rem;
+}
+
+.hero__footer {
+	font-family: var(--font-body);
+  text-align: center;
+}
+
+.signup {
+	flex:2;
+}
