@@ -3,12 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sign up | Odin "</title>
+	<title>Sign up | Odin </title>
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/fonts.css">
 </head>
 <body>
-	<h1>Hello world</h1>
+	<main>
+		<section class="hero">
+			<div class="hero__logo">
+				<img src="assets/logo.svg" alt="logo">
+				<h1>ODIN</h1>
+			</div>
+			<figure class="hero__image">
+			<img src="assets/hero-image.jpg" alt="Overhead view of vast cityscape at dusk">
+			<figcaption>Photo by <a href="https://unsplash.com/@mrnuclear">Zhenyu Luo</a> on <a href="https://unsplash.com/">Unsplash</a></figcaption>
+			</figure>
+		</section>
+		<section class="signup">
+			<div class="signup__header">
+				<h2>This is not a real online service! You know you need something in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</h2>
+				<h2>You <em>know</em> you want to.</h2>
+			</div>
+			<form class="signup__form" action="#" method="post">
+				<h3 class="">Let's do this!</h3>
+				<div>
+					<label for="first-name">FIRST NAME</label>
+					<input type="text" id="first-name" name="first-name">
+					<label for="email">EMAIL</label>
+					<input type="email" id="email" name="email">
+					<label for="password">PASSWORD</label>
+					<input type="password" id="password" name="password">
+				</div>
+				<div>
+					<label for="last-name">LAST NAME</label>
+					<input type="text" id="last-name" name="last-name">
+					<label for="phone-number">PHONE NUMBER</label>
+					<input type="number" id="phone-number" name="phone-number">
+					<label for="confirm-password">CONFIRM PASSWORD</label>
+					<input type="password" id="confirm-password" name="confirm-password">
+				</div>
+				<div class="signup__actions">
+					<button class="signup__button">Create Account</button>
+					<p class="signup__footer">Already have an account? <a href="#">Log in</a></p>
+				</div>
+			</form>
+		</section>
+	</main>
 </body>
 </html>
