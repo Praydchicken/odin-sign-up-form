@@ -25,6 +25,14 @@ h1 {
 	font-size: 6rem;
 }
 
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.8rem;
+}
+
 p, label {
 	font-family: var(--font-body);
 }
@@ -61,6 +69,7 @@ main {
  	background-color: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.5rem;
   margin-block: 2em;
+  padding-block: 30px;
 }
 
 .hero__logo-image {
@@ -74,4 +83,72 @@ main {
 
 .signup {
 	flex: 3;
+}
+
+.signup__header {
+	margin: 60px;
+}
+
+.signup__card {
+	padding: 30px 60px;
+	box-shadow: -2px 2px 20px 5px rgba(0,0,0,0.3);
+}
+
+.signup__fields {
+	display: flex;
+}
+
+.signup__fields input {
+	width: 320px;
+	margin-block-end: 1em;
+	font-size: 1.2rem;
+	color: white;
+	outline: 1px solid var(--clr-font);
+	padding: 8px;
+	border-radius: 6px;
+	border-style: none;
+	background-color: var(--clr-primary);
+}
+
+.signup__fields input:focus {
+	outline: 1px solid  #0527FC;
+}
+
+.signup__fields input:valid {
+	outline: 1px solid var(--clr-accent)
+}
+
+.signup__fields input:user-invalid {
+	outline: 1px solid orangered;
+}
+
+.signup__fields label {
+	display: block;
+	margin-block-end: 8px;
+	font-size: 0.75rem;
+	letter-spacing: 2px;
+}
+
+.signup__fields-column {
+	margin-inline-end: 6rem;
+}
+
+.signup__actions {
+	margin-block: 30px;
+	margin-inline:60px;
+}
+
+.signup__button {
+	font-family: 'Space Mono';
+	border: none;
+	font-size: 1rem;
+	font-weight: 700;
+	background-color: var(--clr-accent);
+	border-radius: 4px;
+	padding: 12px 24px;
+	margin-block-end: 12px;
+}
+
+.signup__button:hover {
+	background-color: var(--clr-font);
 }
